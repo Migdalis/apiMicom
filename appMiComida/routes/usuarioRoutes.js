@@ -16,6 +16,7 @@ router.get('/:id', usuarioController.show);
  * POST
  */
 router.post('/new', usuarioController.create);
+router.post('/login', usuarioController.login);
 
 /*
  * PUT

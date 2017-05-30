@@ -7,7 +7,7 @@ var usuarioSchema = new Schema({
 	'nombre': String,
 	'apellido': String,
 	'telefono': { type: Number},
-	'email': String,
+	'email': { type: String, required: true, unique: true},
 	'fecha_nacimiento': Date,
 	'sexo': { Type: String, enum: ['Masculino','Femenino']},
 	'suscriptores': [{ type: Schema.Types.ObjectId, ref: 'User', required: false}],

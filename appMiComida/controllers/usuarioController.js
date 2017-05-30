@@ -70,6 +70,26 @@ module.exports = {
         });
     },
 
+    login: function (req, res) {
+        var user = req.body.usuario;
+        var pass = req.body.password;
+        usuarioModel.findOne({ $or:[{nickname: user, password: pass},{email: user, password: pass}]}, function (err, usuario) {
+            if (err) {
+                return res.status(500).json({
+                    message: 'Error when getting usuario.',
+                    error: err
+                });
+            }
+            if (!usuario) {
+                return res.status(404).json({
+                    message: 'No such usuario'
+                });
+            }
+            return res.json(usuario);
+        });
+    },
+
+
     /**
      * usuarioController.update()
      */
