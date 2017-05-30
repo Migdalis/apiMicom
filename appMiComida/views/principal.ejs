@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <title>Mi Comida</title>
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+      <!--Let browser know website is optimized for mobile-->
+    <!-- Viewport mobile tag for sensible mobile support -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="/stylesheets/estilo.css">
+    <link rel="stylesheet" href="/stylesheets/principal.css">
+  </head>
+
+  <body class="principal">
+    <div class="row">
+  <div class="">
+    <ul id="slide-out" class="side-nav fixed grey lighten-3">
+
+      <li><div class="userView">
+        
+          <div class="background red darken-2">
+            <img src="/images/comida-h4.jpg" class="img-responsive" alt="">
+          </div>
+          <a href="#!user"><img class="circle" src="/images/man.png"></a>
+          <a href="#!name"><span class="white-text name bold">John Doe</span></a>
+          <a href="#!email"><span class="white-text email bold">jdandturk@gmail.com</span></a>
+          </div>
+        </li>
+        <li><a href="/principal" class="white orange-text text-darken-2"><i class="material-icons prefix orange-text text-darken-2">home</i>Inicio</a></li>
+        <li><a href="#!" class="white orange-text text-darken-2 tooltipped" data-position="right" data-delay="50" data-tooltip="próximamente"><i class="material-icons prefix orange-text text-darken-2">public</i>Suscripciones</a></li>
+        <li><a href="#!" class="white orange-text text-darken-2 tooltipped" data-position="right" data-delay="50" data-tooltip="próximamente"><i class="material-icons prefix orange-text text-darken-2">thumb_up</i>Top</a></li>
+          <li><a href="#!" class="white orange-text text-darken-2 tooltipped" data-position="right" data-delay="50" data-tooltip="próximamente"><i class="material-icons prefix orange-text text-darken-2">trending_up</i>Tendencias</a></li>
+          <li><a href="#!" class="white orange-text text-darken-2 tooltipped" data-position="right" data-delay="50" data-tooltip="próximamente"><i class="material-icons prefix orange-text text-darken-2">update</i>Frescas</a></li>
+        <li><a href="http://micomida.com" target="_blank" class="white orange-text text-darken-2 tooltipped" data-position="right" data-delay="50" data-tooltip="¡Visita nuestro Blog!"><i class="material-icons prefix orange-text text-darken-2">class</i>Blog</a></li>
+        <li><a href="/ajustes" class="white orange-text text-darken-2 tooltipped" data-position="right" data-delay="50" data-tooltip="Ajusta tus datos de Usuario"><i class="material-icons prefix orange-text text-darken-2">settings</i>Ajustes de perfil</a></li>
+        <li class="divider"></li>
+        <li class="red darken-4"><a href="/" class="white-text text-darken-2"><i class="material-icons prefix white-text text-darken-2">highlight_off</i>Cerrar Sesión</a></li>
+        <li class="divider"></li>
+        <li class="white">
+              <a class="orange-text text-darken-2 bold" href="#!"><i class="orange-text text-darken-2 material-icons prefix">chrome_reader_mode</i>Política y Términos</a>
+              
+        </li>
+      </ul>
+      
+  </div>
+  <div class="contenido">
+     <div class="fixed-action-btn horizontal ">
+        <a class="btn-floating btn-large red darken-4">
+          <i class="large material-icons">chevron_left</i>
+        </a>
+        <ul>
+          <li><a class="btn-floating red darken-4 tooltipped" data-position="top" data-delay="50" data-tooltip="próximamente"><i class="material-icons">file_upload</i></a></li>
+          <li><a class="btn-floating red darken-4 tooltipped" data-position="top" data-delay="50" data-tooltip="próximamente"><i class="material-icons">favorite</i></a></li>
+          <li><a class="btn-floating red darken-4 tooltipped" data-position="top" data-delay="50" data-tooltip="próximamente"><i class="material-icons">kitchen</i></a></li>
+          <li><a class="btn-floating red darken-4 tooltipped" data-position="top" data-delay="50" data-tooltip="próximamente"><i class="material-icons">notifications</i></a></li>
+          <li><a class="btn-floating red darken-4 tooltipped" data-position="top" data-delay="50" data-tooltip="próximamente"><i class="material-icons">sms</i></a></li>
+        </ul>
+      </div>
+     <nav class="navbar white lighten-3">
+        <div class="nav-wrapper">
+          <a href="#" class="brand-logo"><img src="/images/logoMicomida-fixed.png" class="responsive-img hide-on-large-only" alt=""></a>
+          <ul class="left">
+            <li><a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons orange-text">menu</i></a></li>
+          </ul>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="#!" class="tooltipped" data-position="left" data-delay="50" data-tooltip="próximamente"><i class="material-icons orange-text text-darken-3">file_upload</i></a></li>
+            <li><a href="#!" class="tooltipped" data-position="left" data-delay="50" data-tooltip="próximamente"><i class="material-icons orange-text text-darken-3">favorite</i></a></li>
+            <li><a href="#!" class="tooltipped" data-position="left" data-delay="50" data-tooltip="próximamente"><i class="material-icons orange-text text-darken-3">kitchen</i></a></li>
+            <li><a href="#!" class="tooltipped" data-position="left" data-delay="50" data-tooltip="próximamente"><i class="material-icons orange-text text-darken-3">notifications</i></a></li>
+            <li><a href="#!" class="tooltipped" data-position="left" data-delay="50" data-tooltip="próximamente"><i class="material-icons orange-text text-darken-3">sms</i></a></li>
+          </ul>
+          
+        </div>
+      </nav>
+
+      <div class="comida">
+        <div class="row">
+          <div class="col s10 offset-s1 m8 offset-m2 white">
+            <div class="col s10">
+              <p class="center-align white">
+                <img src="images/logoMicomida.jpg" class="responsive-img center-align hide-on-med-and-down" alt="">
+              </p>
+            </div>
+            <div class="col s12">
+
+              <nav class="grey lighten-3">
+
+                  <div class="nav-wrapper">
+                    <form>
+                      <div class="input-field col s12">
+                        <input placeholder="Recetas, Ingredientes, Usuarios ..." id="search" type="search" required>
+                        <label class="label-icon" for="search"><i class="material-icons naranja-text prefix">search</i></label>
+                        <i class="material-icons naranja-text">close</i>
+                      </div>
+                    </form>
+                  </div>
+              </nav>
+              <div class="col s12 sugerencias grey lighten-4">
+              <br>
+                <span class="naranja-text bold">Búsquedas recientes:</span> <br>
+                <a href="#!" class="grey-text text-darken-4">sugerencia 1</a>
+                <a href="#!" class="grey-text text-darken-4">sugerencia 2</a>
+                <br>
+                <br>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+  <div class="col s12 m9 principal">
+    <div class="col s12 orange z-depth-2">
+      <h3 class="white-text center">Últimas recetas</h3>
+    </div>
+    <!-- PUBLICACIONES -->
+    <div class="col s12 m8">
+      <div class="row">
+        <div class="col s12 m6">
+          <div class="card white darken-1 z-depth-4">
+          <div class="card-image">
+            <img src="/images/comida-h1.jpg">
+          </div>
+                  <div class="card-content orange-text bold">
+                    <span class="card-title">Receta 1 <a href="#!"><i class="material-icons right grey-text">share</i></a></span>
+                     <a class="btn-floating halfway-fab waves-effect waves-light red darken-4"><i class="material-icons">arrow_forward</i></a>
+                    <p class="black-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor quis et, perferendis!</p>
+                  </div>
+                  <div class="card-action orange">
+                    <a href="#" class="white-text">link</a>
+                  </div>
+              </div>
+          </div>
+        <div class="col s12 m6">
+          <div class="card white darken-1 z-depth-4">
+          <div class="card-image">
+            <img src="/images/comida-h2.jpg">
+          </div>
+                  <div class="card-content orange-text bold">
+                    <span class="card-title">Receta 2 <a href="#!"><i class="material-icons right grey-text">share</i></a></span>
+                     <a class="btn-floating halfway-fab waves-effect waves-light red darken-4"><i class="material-icons">arrow_forward</i></a>
+                    <p class="black-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus reiciendis aliquam illo, consequatur. Vitae, iste!</p>
+                  </div>
+                  <div class="card-action orange">
+                    <a href="#" class="white-text">link</a>
+                  </div>
+              </div>
+          </div>
+        <div class="col s12 m6">
+          <div class="card white darken-1 z-depth-4">
+            <div class="card-image">
+              <img src="/images/comida-h3.jpg">
+            </div>
+                  <div class="card-content orange-text bold">
+                    <span class="card-title">Receta 3 <a href="#!"><i class="material-icons right grey-text">share</i></a></span>
+                     <a class="btn-floating halfway-fab waves-effect waves-light red darken-4"><i class="material-icons">arrow_forward</i></a>
+                    <p class="black-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni ut dignissimos perspiciatis provident possimus nam minima consectetur molestiae quos laborum?</p>
+                  </div>
+                  <div class="card-action orange">
+                    <a href="#" class="white-text">link</a>
+                  </div>
+              </div>
+          </div>
+        <div class="col s12 m6">
+          <div class="card white darken-1 z-depth-4">
+            <div class="card-image">
+              <img src="/images/comida-h1.jpg">
+            </div>
+                  <div class="card-content orange-text bold">
+                    <span class="card-title">Receta 4 <a href="#!"><i class="material-icons right grey-text">share</i></a></span>
+                     <a class="btn-floating halfway-fab waves-effect waves-light red darken-4"><i class="material-icons">arrow_forward</i></a>
+                    <p class="black-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, quae.</p>
+                  </div>
+                  <div class="card-action orange">
+                    <a href="#" class="white-text">link</a>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </div>
+      <div class="col s12 m4">
+        <div class="card">
+          <div class="card-image">
+                  <img src="/images/comida-vertical.jpg">
+                  <span class="card-title"></span>
+                </div>
+                  <a class="btn-floating halfway-fab waves-effect waves-light red darken-4"><i class="material-icons">arrow_forward</i></a> 
+                <div class="card-content black-text bold">
+                  <span class="card-title orange-text">Receta Destacada <a href="#!"><i class="material-icons right grey-text">share</i></a></span>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, beatae repudiandae! Doloremque libero, ipsa expedita, nesciunt molestiae similique obcaecati iure asperiores, eaque eligendi sint veritatis!</p>
+                </div>
+                <div class="card-action orange">
+                  <a href="#" class="white-text bold">link</a>
+                </div>
+        </div>
+      </div>
+      <div class="row">
+
+          <div class="col s12 center">
+            <a href="#!" class="btn waves-effect waves-light orange white-text"><i class="material-icons left">refresh</i>Actualizar</a>
+          </div>
+      </div>
+  </div>
+
+      <div class="col s12 m3 grey lighten-3">
+        <h4 class="naranja-text center">Publicaciones Oficiales</h4>
+        <div class="col s12">
+          <div class="card orange lighten-1 z-depth-2">
+            <div class="card-image">
+                    <img src="/images/comida-h2.jpg">
+                  </div>
+            <div class="card-content white-text">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, minima.</p>
+                  </div>
+                  <div class="card-action">
+                    <a href="#" class="white-text">Leer más <i class="material-icons right">chevron_right</i></a>
+                  </div>
+          </div>
+        </div>
+        <div class="col s12">
+          <div class="card orange lighten-1 z-depth-2">
+            <div class="card-image">
+                    <img src="/images/comida-h3.jpg">
+                  </div>
+            <div class="card-content white-text">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed sint fugiat beatae doloremque excepturi minus, eaque aut perspiciatis eligendi. Repudiandae placeat, natus nulla distinctio!</p>
+                  </div>
+                  <div class="card-action">
+                    <a href="#" class="white-text">Leer más <i class="material-icons right">chevron_right</i></a>
+                  </div>
+          </div>
+        </div>
+        <div class="col s12 right">
+          <a href="http://micomida.com" target="_blank" class="btn waves-light waves-effect center-align orange bold right">Ir al Blog <i class="material-icons right">chevron_right</i></a>
+          <br><br>
+        </div>
+      </div>
+</div>
+
+
+  
+</div>
+
+
+<!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<!-- Compiled and minified JavaScript -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+
+    <script src="/js/principal.js"></script>
+  </body>
+</html>
