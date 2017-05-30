@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css?family=Handlee');
+html{
+	font-family: 'Handlee', cursive;
+}
+/* COLORES DE LOS INPUT DEL FORMULARIO   */
+
+ /* label color */
+   .input-field label {
+     color: #ff9900;
+   }
+   /* icon prefix focus color */
+   .input-field .prefix.active {
+     color: #ff9900;
+   }
+/* ----------------- type email ---------------*/
+     /* label focus color */
+     .input-field input[type=email]:focus + label {
+       color: #ff9900;
+     }
+     /* label underline focus color */
+     .input-field input[type=email]:focus {
+       border-bottom: 1px solid #ff9900;
+       box-shadow: 0 1px 0 0 #ff9900;
+     }
+     /* valid color */
+     .input-field input[type=email].valid {
+       border-bottom: 1px solid #ff9900;
+       box-shadow: 0 1px 0 0 #ff9900;
+     }
+     /* invalid color */
+     .input-field input[type=email].invalid {
+       border-bottom: 1px solid #ff9900;
+       box-shadow: 0 1px 0 0 #ff9900;
+     }
+
+/* -------------- type text  ------------------- */
+  /* label focus color */
+     .input-field input[type=text]:focus + label {
+       color: #ff9900;
+     }
+     /* label underline focus color */
+     .input-field input[type=text]:focus {
+       border-bottom: 1px solid #ff9900;
+       box-shadow: 0 1px 0 0 #ff9900;
+     }
+     /* valid color */
+     .input-field input[type=text].valid {
+       border-bottom: 1px solid #ff9900;
+       box-shadow: 0 1px 0 0 #ff9900;
+     }
+     /* invalid color */
+     .input-field input[type=text].invalid {
+       border-bottom: 1px solid #ff9900;
+       box-shadow: 0 1px 0 0 #ff9900;
+     }
+  /* -------------- type password -------------- */
+
+  /* label focus color */
+   .input-field input[type=password]:focus + label {
+     color: #ff9900;
+   }
+   /* label underline focus color */
+   .input-field input[type=password]:focus {
+     border-bottom: 1px solid #ff9900;
+     box-shadow: 0 1px 0 0 #ff9900;
+   }
+   /* valid color */
+   .input-field input[type=password].valid {
+     border-bottom: 1px solid #ff9900;
+     box-shadow: 0 1px 0 0 #ff9900;
+   }
+   /* invalid color */
+   .input-field input[type=password].invalid {
+     border-bottom: 1px solid #ff9900;
+     box-shadow: 0 1px 0 0 #ff9900;
+   }
+ /* --------------- type checkbox  ----------------*/
+
+.checkbox-orange[type="checkbox"].filled-in:checked + label:after{
+     border: 2px solid #ff9900;
+     background-color: #ff9900;
+}
+
+
+/* custom css  */
+
+.bold{
+	font-weight: bold;
+} 
+.naranja{
+	background:#ff9900 !important;
+}
+.naranja-text{
+	color:#ff9900 !important;
+}
+.gris-oscuro{
+ background: #1b100c;
+}
+.gris-oscuro-text{
+  color:#1b100c;
+}
+
+.div-naranja{
+  border:1px solid #ff9900;
+}
+
+.principal{
+  background: url("../images/food.png");
+}
+.comida{
+  background:url("../images/comida3.png");
+}
