@@ -1,0 +1,28 @@
+/* datepicker styles */ 
+.picker__date-display{
+	background-color: #ff9900
+}
+.picker__weekday-display{
+	background-color: #ffab2d;
+}
+.picker__day .picker__day--infocus .picker__day--today .picker__day--highlighted{
+	color:#ff9900;
+	font-weight: bold;
+}
+
+.picker__close, .picker__today{
+	color:#ff9900;
+	font-weight: bold;
+}
+.picker__day--selected, .picker__day--selected:hover, .picker--focused .picker__day--selected{
+	background-color: #ff9900;
+}
+.picker__day.picker__day--today{
+	color: #ff9900;
+}
+.login-box {
+  height: 100%;
+}
+.dropdown-content li>a, .dropdown-content li>span{
+	color:#FF9900;
+}
