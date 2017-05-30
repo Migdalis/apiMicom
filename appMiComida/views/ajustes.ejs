@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <title><%= title %></title>
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+      <!--Let browser know website is optimized for mobile-->
+    <!-- Viewport mobile tag for sensible mobile support -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="/stylesheets/estilo.css">
+    <!--STYLES END-->
+    <link rel="stylesheet" href="/stylesheets/principal.css">
+  </head>
+
+  <body class="principal">
+<div class="row">
+    <div class="">
+      <ul id="slide-out" class="side-nav fixed grey lighten-3">
+
+        <li><div class="userView">
+          
+            <div class="background red darken-2">
+              <img src="/images/comida-h4.jpg" class="img-responsive" alt="">
+            </div>
+            <a href="#!user"><img class="circle" src="/images/man.png"></a>
+            <a href="#!name"><span class="white-text name bold">John Doe</span></a>
+            <a href="#!email"><span class="white-text email bold">jdandturk@gmail.com</span></a>
+            </div>
+          </li>
+          <li><a href="/principal" class="white orange-text text-darken-2"><i class="material-icons prefix orange-text text-darken-2">home</i>Inicio</a></li>
+          <li><a href="#!" class="white orange-text text-darken-2 tooltipped" data-position="right" data-delay="50" data-tooltip="próximamente"><i class="material-icons prefix orange-text text-darken-2">public</i>Suscripciones</a></li>
+          <li><a href="#!" class="white orange-text text-darken-2 tooltipped" data-position="right" data-delay="50" data-tooltip="próximamente"><i class="material-icons prefix orange-text text-darken-2">thumb_up</i>Top</a></li>
+          <li><a href="#!" class="white orange-text text-darken-2 tooltipped" data-position="right" data-delay="50" data-tooltip="próximamente"><i class="material-icons prefix orange-text text-darken-2">trending_up</i>Tendencias</a></li>
+          <li><a href="#!" class="white orange-text text-darken-2 tooltipped" data-position="right" data-delay="50" data-tooltip="próximamente"><i class="material-icons prefix orange-text text-darken-2">update</i>Frescas</a></li>
+          <li><a href="http://micomida.com" target="_blank" class="white orange-text text-darken-2 tooltipped" data-position="right" data-delay="50" data-tooltip="¡Visita nuestro Blog!"><i class="material-icons prefix orange-text text-darken-2">class</i>Blog</a></li>
+          <li><a href="#!" class="white orange-text text-darken-2"><i class="material-icons prefix orange-text text-darken-2">settings</i>Ajustes de perfil</a></li>
+          <li class="divider"></li>
+          <li class="red darken-4"><a href="/" class="white-text text-darken-2"><i class="material-icons prefix white-text text-darken-2">highlight_off</i>Cerrar Sesión</a></li>
+          <li class="divider"></li>
+          <li class="white">
+              <a class="orange-text text-darken-2 bold" href="#!"><i class="orange-text text-darken-2 material-icons prefix">chrome_reader_mode</i>Política y Términos</a>
+              
+          </li>
+        </ul>
+        
+    </div>
+    <div class="contenido">
+       
+      <nav class="navbar white lighten-3">
+          <div class="nav-wrapper">
+            <a href="#" class="brand-logo"><img src="/images/logoMicomida-fixed.png" class="responsive-img" alt=""></a>
+            <ul class="left">
+              <li><a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons orange-text">menu</i></a></li>
+            </ul>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+              <li><a href="#!" class="tooltipped" data-position="left" data-delay="50" data-tooltip="próximamente"><i class="material-icons orange-text text-darken-3">file_upload</i></a></li>
+              <li><a href="#!" class="tooltipped" data-position="left" data-delay="50" data-tooltip="próximamente"><i class="material-icons orange-text text-darken-3">favorite</i></a></li>
+              <li><a href="#!" class="tooltipped" data-position="left" data-delay="50" data-tooltip="próximamente"><i class="material-icons orange-text text-darken-3">kitchen</i></a></li>
+              <li><a href="#!" class="tooltipped" data-position="left" data-delay="50" data-tooltip="próximamente"><i class="material-icons orange-text text-darken-3">notifications</i></a></li>
+              <li><a href="#!" class="tooltipped" data-position="left" data-delay="50" data-tooltip="próximamente"><i class="material-icons orange-text text-darken-3">sms</i></a></li>
+            </ul>
+            
+          </div>
+      </nav>
+    <div class="row">
+            <form action="/principal" class="col card s12">
+                  <div class="col s12 m6">
+                    <div class="input-field col s12">
+                      <i class="material-icons prefix orange-text">person</i>
+                      <input id="user" type="text" class="validate">
+                      <label for="email">Nombre</label>
+                  </div>
+                  <div class="input-field col s12">
+                      <i class="material-icons prefix orange-text"></i>
+                      <input id="user" type="text" class="validate">
+                      <label for="email">Apellido</label>
+                  </div>
+                  <div class="input-field col s12">
+                      <i class="material-icons prefix orange-text">phone</i>
+                      <input id="user" type="text" class="validate">
+                      <label for="email">Telefono</label>
+                  </div>
+                  <div class="input-field col s12">
+                      <select>
+                        <option value="" disabled selected>Elige tu género</option>
+                        <option value="Masculino" class="orange-text">Hombre</option>
+                        <option value="Femenino" class="orange-text">Mujer</option>
+                      </select>
+                      <label>Género</label>
+                  </div>
+
+                  </div>
+                  <div class="col s12 m6">
+                  <div class="input-field col s12">
+                      <i class="material-icons prefix orange-text">mail</i>
+                      <input id="email" type="email" class="validate">
+                      <label for="email">Correo electrónico</label>
+                  </div>
+                  <div class="input-field col s12 m6">
+                    <i class="material-icons prefix orange-text">date_range</i>
+                    <input id="date" type="date" class="datepicker">
+                    <label for="date">Fecha de nacimiento</label>
+                  </div>
+                  <div class="input-field col s12">
+                      <i class="material-icons prefix orange-text">vpn_key</i>
+                      <input id="pass" type="password" class="validate">
+                      <label for="pass">contraseña</label>
+                  </div>
+                <div class="col m12">
+                    <p class="right-align">
+                        <button class="btn waves-effect waves-light orange darken-2" type="submit" name="action">Actualizar</button>
+                    </p>
+                </div>
+                  </div>
+            </form>
+          </div>
+        
+    </div>
+  </div>
+
+<!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<!-- Compiled and minified JavaScript -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+
+    <script src="/js/principal.js"></script>
+  </body>
+</html>

@@ -15,4 +15,9 @@ router.get('/principal', function(req, res, next) {
   res.render('principal', { title: 'Inicio | Mi Comida' });
 });
 
+/* PAGINA AJUSTES */
+router.get('/ajustes', function(req, res, next) {
+  res.render('ajustes', { title: 'Inicio | Mi Comida' });
+});
+
 module.exports = router;
