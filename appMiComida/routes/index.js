@@ -5,5 +5,10 @@ var router = express.Router();
 router.get('/', function(req, res, next) {
   res.render('index', { title: 'Mi Comida | Login' });
 });
+/* PAGINA DE REGISTRO */
+router.get('/registro', function(req, res, next) {
+  res.render('registro', { title: 'Registro | Mi Comida' });
+});
+
 
 module.exports = router;

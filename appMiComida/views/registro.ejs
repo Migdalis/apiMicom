@@ -1,0 +1,120 @@
+
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <title><%= title %></title>
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+    <link rel="icon" type="img/ico" href="images/favicon.png">
+    <!--Let browser know website is optimized for mobile-->
+
+    <!-- Viewport mobile tag for sensible mobile support -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <link rel="stylesheet" href="/stylesheets/estilo.css">
+
+    <link rel="stylesheet" href="/stylesheets/registro.css">
+
+  </head>
+
+  <body class="principal">
+<div class="valign-wrapper row login-box">
+        <div class="col s12 m8 offset-m2 white">
+          <div class="col s12 m4">
+              <img src="/images/logo-micomida.jpg" class="responsive-img center-align" alt="">
+          </div>
+          <div class="center col s12 naranja">
+             <h4 class="center-align valign white-text">Registro en el sistema</h4>
+          </div>
+          <div class="row">
+            <form class="col s12">
+                  <div class="col s12 m6">
+                    <div class="input-field col s12">
+                      <i class="material-icons prefix orange-text">person</i>
+                      <input id="user" type="text" class="validate">
+                      <label for="email">Nombre</label>
+                  </div>
+                  <div class="input-field col s12">
+                      <i class="material-icons prefix orange-text"></i>
+                      <input id="user" type="text" class="validate">
+                      <label for="email">Apellido</label>
+                  </div>
+                  <div class="input-field col s12">
+                      <i class="material-icons prefix orange-text">phone</i>
+                      <input id="user" type="text" class="validate">
+                      <label for="email">Telefono</label>
+                  </div>
+                  <div class="input-field col s12">
+                      <select>
+                        <option value="" disabled selected>Elige tu género</option>
+                        <option value="1" class="orange-text">Hombre</option>
+                        <option value="2" class="orange-text">Mujer</option>
+                      </select>
+                      <label>Género</label>
+                  </div>
+                  </div>
+                  <div class="col s12 m6">
+                    <div class="input-field col s12">
+                      <i class="material-icons prefix orange-text">account_circle</i>
+                      <input id="user" type="text" class="validate">
+                      <label for="email">Usuario</label>
+                  </div>
+                  <div class="input-field col s12">
+                      <i class="material-icons prefix orange-text">mail</i>
+                      <input id="email" type="email" class="validate">
+                      <label for="email">Correo electrónico</label>
+                  </div>
+                  <div class="input-field col s12 m6">
+                    <i class="material-icons prefix orange-text">date_range</i>
+                    <input id="date" type="date" class="datepicker">
+                    <label for="date">Fecha de nacimiento</label>
+                  </div>
+                  <div class="input-field col s12">
+                      <i class="material-icons prefix orange-text">vpn_key</i>
+                      <input id="pass" type="password" class="validate">
+                      <label for="pass">contraseña</label>
+                  </div>
+                  <div class="input-field col s12">
+                      <i class="material-icons prefix orange-text">security</i>
+                      <input id="pass" type="password" class="validate">
+                      <label for="pass">Verificar contraseña</label>
+                  </div>
+                <div class="col s12">
+                    <p>
+                        <input type="checkbox" class="filled-in checkbox-orange" id="agree">
+                        <label for="agree" class="orange-text bold">Acepto haber leído los <a href="#!">términos y condiciones</a></label>
+                    </p>
+                </div>
+                <div class="col m12">
+                    <p class="right-align">
+                        <a href="/" class="bold red-text text-darken-4 modal-action modal-close">Iniciar sesión</a> &nbsp;
+                        <button class="btn waves-effect waves-light orange darken-2" type="button" name="action">Registrarse</button>
+                    </p>
+                </div>
+                  </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+ <footer class="page-footer orange darken-2">
+          
+          <div class="footer-copyright naranja">
+            <div class="container white-text">
+            © 2017 micomida.com  | Todos los derechos reservados. &nbsp;
+            <a class="grey-text text-lighten-4 right" href="#!">&nbsp;Política de privacidad</a>
+            <a class="grey-text text-lighten-4 right" href="#!">Términos y condiciones | </a>
+            </div>
+          </div>
+    </footer>
+
+<!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<!-- Compiled and minified JavaScript -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+
+    <script src="/js/registro.js"></script>
+  </body>
+</html>
