@@ -10,66 +10,209 @@
     <!-- Viewport mobile tag for sensible mobile support -->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="stylesheet" href="/stylesheets/estilo.css">
-    <!--STYLES END-->
     <link rel="stylesheet" href="/stylesheets/principal.css">
   </head>
 
   <body class="principal">
-<div class="row">
-    <div class="">
-      <ul id="slide-out" class="side-nav fixed grey lighten-3">
+    <div class="row">
+  <div class="">
+    <ul id="slide-out" class="side-nav grey lighten-3">
 
-        <li><div class="userView">
-          
-            <div class="background red darken-2">
-              <img src="/images/comida-h4.jpg" class="img-responsive" alt="">
+      <li><div class="userView">
+        
+          <div class="background red darken-2">
+            <img src="/images/comida-h4.jpg" class="img-responsive" alt="">
+          </div>
+          <a href="#!user"><img class="circle" src="/images/man.png"></a>
+          <a href="#!name"><span class="white-text name bold">John Doe</span></a>
+          <a href="#!email"><span class="white-text email bold">jdandturk@gmail.com</span></a>
+          </div>
+        </li>
+        <li><a href="/principal" class="white orange-text text-darken-4"><i class="material-icons prefix orange-text text-darken-4">home</i>Inicio</a></li>
+        <li class="no-padding">
+        <ul class="collapsible collapsible-accordion white">
+          <li>
+            <a class="collapsible-header orange-text text-darken-4">Publicaciones<i class="orange-text text-darken-4 material-icons">restaurant_menu</i></a>
+            <div class="collapsible-body">
+              <ul>
+                <li><a href="#!" class="orange-text text-darken-4"><i class="material-icons prefix orange-text text-darken-4">arrow_upward</i>Top</a></li>
+                <li><a href="#!" class="orange-text text-darken-4"><i class="material-icons prefix orange-text text-darken-4">trending_up</i>Tendencias</a></li>
+                <li><a href="#!" class="orange-text text-darken-4"><i class="material-icons prefix orange-text text-darken-4">update</i>Frescas</a></li>
+                <li><a href="#!" data-target="modal1" class="orange-text text-darken-4"><i class="material-icons prefix orange-text text-darken-4">list</i>Categorías</a></li>
+              </ul>
             </div>
-            <a href="#!user"><img class="circle" src="/images/man.png"></a>
-            <a href="#!name"><span class="white-text name bold">John Doe</span></a>
-            <a href="#!email"><span class="white-text email bold">jdandturk@gmail.com</span></a>
-            </div>
-          </li>
-          <li><a href="/principal" class="white orange-text text-darken-2"><i class="material-icons prefix orange-text text-darken-2">home</i>Inicio</a></li>
-          <li><a href="#!" class="white orange-text text-darken-2 tooltipped" data-position="right" data-delay="50" data-tooltip="próximamente"><i class="material-icons prefix orange-text text-darken-2">public</i>Suscripciones</a></li>
-          <li><a href="#!" class="white orange-text text-darken-2 tooltipped" data-position="right" data-delay="50" data-tooltip="próximamente"><i class="material-icons prefix orange-text text-darken-2">thumb_up</i>Top</a></li>
-          <li><a href="#!" class="white orange-text text-darken-2 tooltipped" data-position="right" data-delay="50" data-tooltip="próximamente"><i class="material-icons prefix orange-text text-darken-2">trending_up</i>Tendencias</a></li>
-          <li><a href="#!" class="white orange-text text-darken-2 tooltipped" data-position="right" data-delay="50" data-tooltip="próximamente"><i class="material-icons prefix orange-text text-darken-2">update</i>Frescas</a></li>
-          <li><a href="http://micomida.com" target="_blank" class="white orange-text text-darken-2 tooltipped" data-position="right" data-delay="50" data-tooltip="¡Visita nuestro Blog!"><i class="material-icons prefix orange-text text-darken-2">class</i>Blog</a></li>
-          <li><a href="#!" class="white orange-text text-darken-2"><i class="material-icons prefix orange-text text-darken-2">settings</i>Ajustes de perfil</a></li>
-          <li class="divider"></li>
-          <li class="red darken-4"><a href="/" class="white-text text-darken-2"><i class="material-icons prefix white-text text-darken-2">highlight_off</i>Cerrar Sesión</a></li>
-          <li class="divider"></li>
-          <li class="white">
-              <a class="orange-text text-darken-2 bold" href="#!"><i class="orange-text text-darken-2 material-icons prefix">chrome_reader_mode</i>Política y Términos</a>
-              
           </li>
         </ul>
+      </li>
+        <li><a href="#!" class="white orange-text text-darken-4 tooltipped" data-position="right" data-delay="50" data-tooltip="Suscripciones próximamente"><i class="material-icons prefix orange-text text-darken-4">public</i>Suscripciones</a></li>
         
+        <li><a href="http://micomida.com" target="_blank" class="white orange-text text-darken-4 tooltipped" data-position="right" data-delay="50" data-tooltip="¡Visita nuestro Blog!"><i class="material-icons prefix orange-text text-darken-4">class</i>Blog</a></li>
+        <li><a href="/ajustes" class="white orange-text text-darken-4 tooltipped" data-position="right" data-delay="50" data-tooltip="Ajusta tus datos de Usuario"><i class="material-icons prefix orange-text text-darken-4">settings</i>Ajustes de perfil</a></li>
+        <li class="divider"></li>
+        <li class="red darken-4"><a href="/" class="white-text text-darken-4"><i class="material-icons prefix white-text text-darken-4">highlight_off</i>Cerrar Sesión</a></li>
+        <li class="divider"></li>
+        <li class="white">
+              <a class="orange-text text-darken-4 bold" href="#!"><i class="orange-text text-darken-4 material-icons prefix">chrome_reader_mode</i>Política y Términos</a>
+              
+        </li>
+      </ul>
+      
+  </div>
+  <div class="contenido">
+
+     <div class="fixed-action-btn click-to-toggle hide-on-large-only">
+        <a class="btn-floating btn-large red darken-4">
+          <i class="large material-icons">apps</i>
+        </a>
+        <ul>
+          <li><a class="btn-floating red darken-4 tooltipped" data-position="left" data-delay="50" data-tooltip="publicaciones próximamente"><i class="material-icons">file_upload</i></a></li>
+          <li><a class="btn-floating red darken-4 tooltipped" data-position="left" data-delay="50" data-tooltip="publicaciones próximamente"><i class="material-icons">favorite</i></a></li>
+          <li><a class="btn-floating red darken-4 tooltipped" data-position="left" data-delay="50" data-tooltip="publicaciones próximamente"><i class="material-icons">kitchen</i></a></li>
+          <li><a class="btn-floating red darken-4 tooltipped" data-position="left" data-delay="50" data-tooltip="publicaciones próximamente"><i class="material-icons">notifications</i></a></li>
+          <li><a class="btn-floating red darken-4 tooltipped" data-position="left" data-delay="50" data-tooltip="publicaciones próximamente"><i class="material-icons">sms</i></a></li>
+        </ul>
     </div>
-    <div class="contenido">
-       
-      <nav class="navbar white lighten-3">
-          <div class="nav-wrapper">
-            <a href="#" class="brand-logo"><img src="/images/logoMicomida-fixed.png" class="responsive-img" alt=""></a>
-            <ul class="left">
-              <li><a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons orange-text">menu</i></a></li>
-            </ul>
-            <ul id="nav-mobile" class="right hide-on-med-and-down">
-              <li><a href="#!" class="tooltipped" data-position="left" data-delay="50" data-tooltip="próximamente"><i class="material-icons orange-text text-darken-3">file_upload</i></a></li>
-              <li><a href="#!" class="tooltipped" data-position="left" data-delay="50" data-tooltip="próximamente"><i class="material-icons orange-text text-darken-3">favorite</i></a></li>
-              <li><a href="#!" class="tooltipped" data-position="left" data-delay="50" data-tooltip="próximamente"><i class="material-icons orange-text text-darken-3">kitchen</i></a></li>
-              <li><a href="#!" class="tooltipped" data-position="left" data-delay="50" data-tooltip="próximamente"><i class="material-icons orange-text text-darken-3">notifications</i></a></li>
-              <li><a href="#!" class="tooltipped" data-position="left" data-delay="50" data-tooltip="próximamente"><i class="material-icons orange-text text-darken-3">sms</i></a></li>
-            </ul>
+
+    <div id="dropdown1" class="row dropdown-content">
+        <div class="col s12 bord-naranja naranja">
+        <h5 class="center white-text">Categorías</h5>
+        </div>
+        <div class="col s12 m4 col-menu">
+          <!-- <span class="white-text center">Platos</span> -->
+          <ul>
+            <li class="orange lighten-2 white-text flow-text">Desayunos</li>
+            <li class=" flow-text">Almuerzos</li>
+            <li class="orange lighten-2 white-text flow-text">Cenas</li>
+            <li class=" flow-text">Postres</li>
+            <li class="orange lighten-2 white-text flow-text">Ensaladas</li>
+            <li class=" flow-text">Sopas</li>
             
-          </div>
+          </ul>
+        </div>
+        <div class="col s12 m4 col-menu">
+          <!-- <span class="white-text center">Otros</span> -->
+          <ul>
+
+            <li class="orange lighten-2 white-text flow-text">Acompañamientos</li>
+            <li class=" flow-text">Bocadillos</li>
+            <li class="orange lighten-2 white-text flow-text">Salsas y Aderezos</li>
+            <li class=" flow-text">Nutricionales</li>
+            <li class="orange lighten-2 white-text flow-text">Cereales</li>
+            <li class=" flow-text">Panes</li>
+          </ul>
+        </div>
+        <div class="col s12 m4 col-menu">
+          <!-- <span class="white-text center">Generales</span> -->
+          <ul>
+            <li class="orange lighten-2 white-text flow-text">Carnes</li>
+            <li class=" flow-text">Pescados</li>
+            <li class="orange lighten-2 white-text flow-text">Frutas y Hortalizas</li>
+            <li class=" flow-text">Comidas de 30 min</li>
+          </ul>
+        </div>
+      </div>
+
+    <div id="modal1" class="modal">
+      <div class="modal-content row">
+            <div class="col s12 naranja">
+              <h5 class="center white-text">Categorías</h5>
+            </div>
+            <div class="col s12 m4">
+              <br>
+              <!-- <span class="white-text center">Platos</span> -->
+                <div class="col s12">
+                  <a href="#!" class="orange-text"><i class="material-icons left">grade</i>Desayunos</a>
+                </div>
+                <div class="col s12">
+                  <a href="#!" class="orange-text"><i class="material-icons left">grade</i>Almuerzos</a>
+                </div>
+                <div class="col s12">
+                  <a href="#!" class="orange-text"><i class="material-icons left">grade</i>Cenas</a>
+                </div>
+                <div class="col s12">
+                  <a href="#!" class="orange-text"><i class="material-icons left">grade</i>Postres</a>
+                </div>
+                <div class="col s12">
+                  <a href="#!" class="orange-text"><i class="material-icons left">grade</i>Ensaladas</a>
+                </div>
+                <div class="col s12">
+                  <a href="#!" class="orange-text"><i class="material-icons left">grade</i>Sopas</a>
+                </div>
+            </div>
+            <div class="col s12 m4">
+              <!-- <span class="white-text center">Otros</span> -->
+              <br>
+                <div class="col s12">
+                  <a href="#!" class="orange-text"><i class="material-icons left">grade</i>Acompañamientos</a>
+                </div>
+                <div class="col s12">
+                   <a href="#!" class="orange-text"><i class="material-icons left">grade</i>Bocadillos</a>
+                </div>
+                <div class="col s12">
+                  <a href="#!" class="orange-text"><i class="material-icons left">grade</i>Salsas y Aderezos</a>
+                </div>
+                <div class="col s12">
+                  <a href="#!" class="orange-text"><i class="material-icons left">grade</i>Nutricionales</a>
+                </div>
+                <div class="col s12">
+                  <a href="#!" class="orange-text"><i class="material-icons left">grade</i>Cereales</a>
+                </div>
+                <div class="col s12">
+                  <a href="#!" class="orange-text"><i class="material-icons left">grade</i>Panes</a>
+                </div>
+            </div>
+            <div class="col s12 m4">
+              <!-- <span class="white-text center">Generales</span> -->
+              <br>
+              <div class="col s12">
+                <a href="#!" class="orange-text"><i class="material-icons left">grade</i>Carnes</a>
+              </div>
+              <div class="col s12">
+                <a href="#!" class="orange-text"><i class="material-icons left">grade</i>Pescados</a>
+              </div>
+              <div class="col s12">
+                <a href="#!" class="orange-text"><i class="material-icons left">grade</i>Frutas y Hortalizas</a>
+              </div>
+              <div class="col s12">
+                <a href="#!" class="orange-text"><i class="material-icons left">grade</i>Comidas de 30 min</a>
+              </div>
+            </div>
+        </div>
+    </div>
+     <div class="navbar-fixed">
+       <nav class="navbar white lighten-3">
+
+        <div class="nav-wrapper">
+          <a href="#" class="brand-logo center"><img src="/images/logoMicomida-fixed.png" class="responsive-img" alt=""></a>
+          <ul class="left">
+            <li>
+              <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons orange-text">menu</i></a>
+            </li>
+            <li a class="hide-on-med-and-down"><a href="#!" class="white orange-text bold tooltipped" data-position="right" data-delay="50" data-tooltip="publicaciones próximamente">Top</a></li>
+          <li a class="hide-on-med-and-down"><a href="#!" class="white orange-text  bold tooltipped" data-position="right" data-delay="50" data-tooltip="publicaciones próximamente">Tendencias</a></li>
+          <li a class="hide-on-med-and-down"><a href="#!" class="white orange-text bold tooltipped" data-position="right" data-delay="50" data-tooltip="publicaciones próximamente">Frescas</a></li>
+          <li a class="hide-on-med-and-down"><a href="#!" class="white orange-text bold" data-target="modal1">Categorías</a></li>
+        <li a class="hide-on-med-and-down"><a href="#!" class="orange-text bold tooltipped" data-position="right" data-delay="50" data-tooltip="publicaciones próximamente"><i class="material-icons">shuffle</i></a></li>
+          </ul>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="#!" class="tooltipped" data-position="left" data-delay="50" data-tooltip="publicar receta próximamente"><i class="material-icons orange-text text-darken-1">file_upload</i></a></li>
+            <li><a href="#!" class="tooltipped" data-position="left" data-delay="50" data-tooltip="favoritos próximamente"><i class="material-icons orange-text text-darken-1">favorite</i></a></li>
+            <li><a href="#!" class="tooltipped" data-position="left" data-delay="50" data-tooltip="almacén de ingredientes próximamente"><i class="material-icons orange-text text-darken-1">kitchen</i></a></li>
+            <li><a href="#!" class="tooltipped" data-position="left" data-delay="50" data-tooltip="notificaciones próximamente"><i class="material-icons orange-text text-darken-1">notifications</i></a></li>
+            <li><a href="#!" class="tooltipped" data-position="left" data-delay="50" data-tooltip="mensajería próximamente"><i class="material-icons orange-text text-darken-1">sms</i></a></li>
+
+          </ul>
+          
+        </div>
       </nav>
-    <div class="row">
+     </div>
+
+     <div class="row">
             <div class="row orange">
             <br>
               <div class="col s12 l8 offset-l2 center"><h3 class="white-text bold">Ajustes de Cuenta</h3></div>
             </div>
-            <form action="/principal" class="col card s12">
+            <div action="/principal" class="col card s10 offset-s1 l8 offset-l2">
                   <div class="col s12 m6">
                     <div class="input-field col s12">
                       <i class="material-icons prefix orange-text">person</i>
@@ -118,11 +261,19 @@
                     </p>
                 </div>
                   </div>
-            </form>
+            </div>
           </div>
-        
-    </div>
-  </div>
+</div></div>
+<footer class="page-footer orange darken-2">
+          
+          <div class="footer-copyright naranja">
+            <div class="container white-text">
+            © 2017 micomida.com  | Todos los derechos reservados.
+            <a class="grey-text text-lighten-4 right" href="#!">&nbsp;Política de privacidad</a>
+            <a class="grey-text text-lighten-4 right" href="#!">Términos y condiciones | </a>
+            </div>
+          </div>
+</footer>
 
 <!--Import jQuery before materialize.js-->
       <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
@@ -132,3 +283,5 @@
     <script src="/js/principal.js"></script>
   </body>
 </html>
+
+

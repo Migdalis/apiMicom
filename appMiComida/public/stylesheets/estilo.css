@@ -103,10 +103,44 @@ html{
 .div-naranja{
   border:1px solid #ff9900;
 }
-
+.moulin{
+  background: url("../images/moulin.png");
+  background-attachment: fixed;
+}
+.gww{
+  background: url("../images/grey_wash_wall.png");
+}
+.fos{
+  background: url("../images/fos.png");
+}
 .principal{
   background: url("../images/food.png");
 }
 .comida{
   background:url("../images/comida3.png");
+}
+#dropdown1 div {
+  padding: 0;
+}
+#dropdown1 li{
+  padding-left: 10px;
+  padding-top: 15px;
+}
+#dropdown1{
+  border: 2px solid #ff9900;
+}
+.col-menu{
+  border-right: 1px solid #ff9900;
+}
+.bord-naranja{
+  border:2px solid #ff9900;
+}
+nav ul a{
+  padding:0px 10px;
+}
+nav ul a.btn{
+  margin-left: none;
+  margin-right: 5px;
+  padding:0px 0.5rem !important;
+  text-transform: lowercase;
 }

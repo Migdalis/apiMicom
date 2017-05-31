@@ -19,72 +19,131 @@
 
   </head>
 
-  <body class="principal">
-<div class="valign-wrapper row login-box">
-        <div class="col s12 m8 offset-m2 white">
-          <div class="col s12 m4">
-              <img src="/images/logo-micomida.jpg" class="responsive-img center-align" alt="">
+  <body class="fos">
+  <!-- Modal Structure -->
+  <div id="modal-login" class="modal white">
+    <div class="modal-content">
+      <div class="row">
+        <div class="col s12">
+          <h4 class="center-align naranja-text">Acceso al sistema</h4>
+          <div class="row">
+            <div class="col s12 m6">
+              <img src="/images/cheff-logo.jpg" width="60%" class="responsive-img" alt="">
+            </div>
+            <form class="col s12 m6">
+                <div class="input-field col s12">
+                    <input id="email" type="email" class="validate">
+                    <label for="email">Usuario/Email</label>
+                </div>
+                <div class="input-field col s12">
+                    <input id="pass" type="password" class="validate">
+                    <label for="pass">Contraseña</label>
+                </div>
+                <div class="col s12">
+                    <p>
+                        <input type="checkbox" class="filled-in checkbox-orange" id="remember">
+                        <label for="remember" class="orange-text">Recordar datos</label>
+                    </p>
+                </div>
+                <div class="col m12">
+
+                    <p class="right-align">
+                        <a href="/registro" class="bold red-text text-darken-4 modal-action modal-close">Registrarse</a> &nbsp;
+                        <button class="btn waves-effect waves-light orange darken-2" type="button" name="action">Iniciar Sesión</button>
+                    </p>
+                </div>
+            </form>
           </div>
-          <div class="center col s12 naranja">
+        </div>
+      </div>
+    </div>
+  </div>
+<div class="navbar-fixed">
+       <nav class="navbar white lighten-3">
+
+        <div class="nav-wrapper">
+          <a href="/" class="brand-logo center"><img src="/images/logoMicomida-fixed.png" class="responsive-img" alt=""></a>
+          <ul class="left">
+            <li a class="hide-on-med-and-down"><a href="#!" class="white orange-text text-darken-2 tooltipped" data-position="right" data-delay="50" data-tooltip="publicaciones próximamente">Top</a></li>
+          <li a class="hide-on-med-and-down"><a href="#!" class="white orange-text  text-darken-2 tooltipped" data-position="right" data-delay="50" data-tooltip="publicaciones próximamente">Tendencias</a></li>
+          <li a class="hide-on-med-and-down"><a href="#!" class="white orange-text text-darken-2 tooltipped" data-position="right" data-delay="50" data-tooltip="publicaciones próximamente">Frescas</a></li>
+          <li a class="hide-on-med-and-down"><a href="#!" class="white orange-text text-darken-2" data-target="modal1">Categorías</a></li>
+        <li a class="hide-on-med-and-down"><a href="#!" class="orange-text text-darken-2 tooltipped" data-position="right" data-delay="50" data-tooltip="publicaciones próximamente"><i class="material-icons">shuffle</i></a></li>
+          </ul>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+                  <li><a href="#!" data-target="modal-login" class="btn orange white-text bold">Iniciar Sesión</a></li>
+                  <li><a href="/registro" class="btn deep-orange darken-1 white-text bold">Registrarse</a></li>
+          </ul>
+          
+        </div>
+      </nav>
+     </div>
+<div class="valign-wrapper row login-box white">
+        <div class="col s12 m4 white hide-on-med-and-down">
+              <img src="/images/cheff-logo.jpg" width="80%" class="responsive-img" alt="">
+        </div>
+        <div class="col s12 m8 fos">
+        <br>
+          <div class="center col s12 deep-orange darken-2">
              <h4 class="center-align valign white-text">Registro en el sistema</h4>
           </div>
           <div class="row">
             <form class="col s12">
                   <div class="col s12 m6">
                     <div class="input-field col s12">
-                      <i class="material-icons prefix orange-text">person</i>
+                      <i class="material-icons prefix deep-orange-text">person</i>
                       <input id="user" type="text" class="validate">
                       <label for="email">Nombre</label>
                   </div>
                   <div class="input-field col s12">
-                      <i class="material-icons prefix orange-text"></i>
+                      <i class="material-icons prefix deep-orange-text"></i>
                       <input id="user" type="text" class="validate">
                       <label for="email">Apellido</label>
                   </div>
                   <div class="input-field col s12">
-                      <i class="material-icons prefix orange-text">phone</i>
+                      <i class="material-icons prefix deep-orange-text">phone</i>
                       <input id="user" type="text" class="validate">
                       <label for="email">Telefono</label>
                   </div>
                   <div class="input-field col s12">
                       <select>
                         <option value="" disabled selected>Elige tu género</option>
-                        <option value="Masculino" class="orange-text">Hombre</option>
-                        <option value="Femenino" class="orange-text">Mujer</option>
+                        <option value="Masculino" class="deep-orange-text">Hombre</option>
+                        <option value="Femenino" class="deep-orange-text">Mujer</option>
                       </select>
                       <label>Género</label>
                   </div>
                   </div>
                   <div class="col s12 m6">
                     <div class="input-field col s12">
-                      <i class="material-icons prefix orange-text">account_circle</i>
+                      <i class="material-icons prefix deep-orange-text">account_circle</i>
                       <input id="user" type="text" class="validate">
                       <label for="email">Usuario</label>
                   </div>
                   <div class="input-field col s12">
-                      <i class="material-icons prefix orange-text">mail</i>
+                      <i class="material-icons prefix deep-orange-text">mail</i>
                       <input id="email" type="email" class="validate">
                       <label for="email">Correo electrónico</label>
                   </div>
                   <div class="input-field col s12 m6">
-                    <i class="material-icons prefix orange-text">date_range</i>
+                    <i class="material-icons prefix deep-orange-text">date_range</i>
                     <input id="date" type="date" class="datepicker">
                     <label for="date">Fecha de nacimiento</label>
                   </div>
                   <div class="input-field col s12">
-                      <i class="material-icons prefix orange-text">vpn_key</i>
+                      <i class="material-icons prefix deep-orange-text">vpn_key</i>
                       <input id="pass" type="password" class="validate">
                       <label for="pass">contraseña</label>
                   </div>
                   <div class="input-field col s12">
-                      <i class="material-icons prefix orange-text">security</i>
+                      <i class="material-icons prefix deep-orange-text">security</i>
                       <input id="pass" type="password" class="validate">
                       <label for="pass">Verificar contraseña</label>
                   </div>
                 <div class="col s12">
                     <p>
                         <input type="checkbox" class="filled-in checkbox-orange" id="agree">
-                        <label for="agree" class="orange-text bold">Acepto haber leído los <a href="#!">términos y condiciones</a></label>
+                        <label for="agree" class="deep-orange-text">Acepto haber leído los <a href="#!">términos y condiciones</a></label>
                     </p>
                 </div>
                 <div class="col m12">

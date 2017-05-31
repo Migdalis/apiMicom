@@ -3,7 +3,7 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Login | Mi Comida' });
+  res.render('unlogged', { title: 'Login | Mi Comida' });
 });
 /* PAGINA DE REGISTRO */
 router.get('/registro', function(req, res, next) {

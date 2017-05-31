@@ -26,3 +26,7 @@
 .dropdown-content li>a, .dropdown-content li>span{
 	color:#FF9900;
 }
+nav.navbar{
+	height:73px;
+	line-height: 73px;
+}

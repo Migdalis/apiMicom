@@ -1,12 +1,7 @@
-.contenido{
-      padding-left: 300px !important;
-    }
 
-    @media only screen and (max-width : 992px) {
-    	.contenido, footer{
-        padding-left: 0px !important;
-      }
-    }
+nav a.button-collapse{
+	display:block !important;
+}
 .sugerencias a{
   margin-right: 15px;
 }
@@ -56,3 +51,6 @@ nav.navbar{
 .dropdown-content li>a, .dropdown-content li>span{
 	color:#FF9900;
 } 
+.side-nav .collapsible-header, .side-nav.fixed .collapsible-header{
+	padding:0px 33px !important;
+}
